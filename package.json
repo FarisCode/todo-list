@@ -2,7 +2,7 @@
   "name": "todo_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://fariscode.github.io/ReactiveTodos",
+  "homepage": "http://fariscode.github.io/todo-list",
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",

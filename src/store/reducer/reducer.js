@@ -7,7 +7,8 @@ const initialState = {
     }],
     invalidInput: false,
     currEditId: null,
-    editInvalidInput: false
+    editInvalidInput: false,
+    theme: localStorage.getItem('reactiveTodosTheme') || "light",
 }
 
 export default (state = initialState, action) => {
@@ -32,6 +33,11 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 editInvalidInput: action.value
+            }
+        case actionTypes.THEME:
+            return {
+                ...state,
+                theme: action.value
             }
         default:
             return state

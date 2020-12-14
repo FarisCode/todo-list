@@ -1,4 +1,4 @@
-.task{
+.task {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,16 +6,17 @@
     min-height: 40px;
     padding: 10px 0;
     border-bottom: 1px solid #eee;
-    background-color: #fff;
     position: relative;
-    border-radius: 5px;
 }
-.task .text::first-letter{
+
+.task .text::first-letter {
     text-transform: uppercase;
 }
-.task .text ,.task i{
+
+.task .text, .task i {
     cursor: pointer;
 }
-.task .text{
+
+.task .text {
     overflow-wrap: break-word;
 }

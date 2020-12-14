@@ -5,9 +5,15 @@ export default class Adder extends Component {
         this.nameInput.focus();
     }
     render() {
-        let invalidStyle = null;
+        let invalidStyle = {};
         if (!this.props.valid) {
             invalidStyle = { boxShadow: '1px 1px 5px rgba(255, 0, 0,0.8), -1px -1px 5px rgba(255, 0, 0,0.8)' };
+        }
+        if (this.props.theme === 'dark') {
+            invalidStyle = {
+                ...invalidStyle,
+                borderColor: '#8787876b',
+            }
         }
         return (
             <div className='adder' style={invalidStyle}>
