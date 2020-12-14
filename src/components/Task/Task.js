@@ -5,7 +5,6 @@ export default props => {
     fontSize: '0.9em',
     width: '80%',
     height: '100%',
-    lineHeight: '40px',
   }
   if (props.done) {
     desStyle = {
@@ -13,7 +12,7 @@ export default props => {
       textDecoration: 'line-through',
       opacity: '0.5',
       width: '80%',
-      lineHeight: '40px'
+      lineHeight: '30px'
     }
   }
   let taskZIndex = null;
