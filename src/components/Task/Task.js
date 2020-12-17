@@ -3,7 +3,7 @@ import './Task.css'
 export default props => {
   let desStyle = {
     fontSize: '0.9em',
-    width: '80%',
+    width: 'calc(100% - 60px)',
     height: '100%',
   }
   if (props.done) {
@@ -11,7 +11,7 @@ export default props => {
       fontSize: '0.7em',
       textDecoration: 'line-through',
       opacity: '0.5',
-      width: '80%',
+      width: 'calc(100% - 60px)',
       lineHeight: '30px'
     }
   }
@@ -39,13 +39,13 @@ export default props => {
               className="fas fa-pencil-alt"
               onClick={props.editClick}
               style={{
-                color: '#8a0d1c',
+                color: '#bb0000',
                 margin: '0 5px',
                 fontSize: '0.8em'
               }}></i>
             : null
         }
-        <i className="fas fa-times" onClick={props.taskDel} style={{ color: '#8a0d1c', margin: '0 5px', fontSize: '0.9em' }}></i>
+        <i className="fas fa-times" onClick={props.taskDel} style={{ color: '#bb0000', margin: '0 5px', fontSize: '0.9em' }}></i>
       </div>
     </div>
   );
